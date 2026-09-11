@@ -33,7 +33,7 @@ pipeline {
 
         stage('Docker Build') {
             steps {
-                bat 'docker build -t simple-java-maven-app:latest .'
+                bat '"C:\\Users\\Sara_MI\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe" build -t simple-java-maven-app:latest .'
             }
         }
     }
