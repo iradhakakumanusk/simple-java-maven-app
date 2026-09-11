@@ -30,5 +30,11 @@ pipeline {
                 bat 'jenkins\\scripts\\deliver.bat'
             }
         }
+
+        stage('Docker Build') {
+            steps {
+                bat 'docker build -t simple-java-maven-app:latest .'
+            }
+        }
     }
 }
